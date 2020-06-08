@@ -1,0 +1,27 @@
+server:
+  port: 8001
+
+management:
+  metrics:
+    export:
+      influx:
+        enabled: true
+        db: my-test
+        uri: http://localhost:8086
+        user-name: admin
+        password: admin
+        connect-timeout: 1s
+        read-timeout: 10s
+        auto-create-db: true
+        step: 1m
+        num-threads: 2
+        consistency: one
+        compressed: true
+        batch-size: 10000
+
+    web:
+      server:
+        auto-time-requests: true
+spring:
+  application:
+    name: my-test
