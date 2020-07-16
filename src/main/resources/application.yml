@@ -19,9 +19,15 @@ management:
         compressed: true
         batch-size: 10000
 
+
     web:
       server:
         auto-time-requests: true
+  endpoints:
+    web:
+      exposure:
+        include: health,info,beans,metrics,env,mappings,threaddump,heapdump
+
 spring:
   application:
     name: my-test

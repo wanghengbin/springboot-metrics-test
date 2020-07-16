@@ -3,3 +3,6 @@ springboot-metrics-test项目
 
 最后参考链接：
 https://www.jianshu.com/p/082571330190
+
+actuator参考链接：
+https://www.jianshu.com/p/d5943e303a1f
